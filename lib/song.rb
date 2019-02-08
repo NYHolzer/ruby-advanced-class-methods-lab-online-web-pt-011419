@@ -40,7 +40,7 @@ class Song
     self.all.sort_by {|song| song.name}
   end 
   
-  def self.new_from_filename (filename)
+  def self.new_from_filename(filename)
     info = filename.split(" - ")
     song = self.new       #created a new song object
     #set to name of this song = name of song in file
