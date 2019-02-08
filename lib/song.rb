@@ -44,7 +44,7 @@ class Song
     info = filename.split(" ")
     song = self.new       #created a new song object
     #set to name of this song = name of song in file
-    song.name = info[1].remove 
+    song.name = info[1].chomp(".mp3")
   end
   
 end
