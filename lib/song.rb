@@ -41,7 +41,7 @@ class Song
   end 
   
   def self.new_from_filename (filename)
-    info = filename.split(" ")
+    info = filename.split(" _ ")
     song = self.new       #created a new song object
     #set to name of this song = name of song in file
     song.name = info[1].chomp(".mp3")
