@@ -42,8 +42,9 @@ class Song
   
   def self.new_from_filename (filename)
     info = filename.split(" ")
-    song = self.new 
-    song.name = info[1].
+    song = self.new       #created a new song object
+    #set to name of this song = name of song in file
+    song.name = info[1].  
   end
   
 end
